@@ -1,0 +1,17 @@
+package controle;
+
+import java.text.ParseException;
+import java.util.ArrayList;
+
+import DAO.ManutencaoDAO;
+import modelo.Manutencao;
+
+public class ProcessaManutencao {
+
+	static ArrayList<Manutencao> manutencoes = new ArrayList<>();
+	static ManutencaoDAO md;
+	
+	public static void abrir() throws ParseException {
+		manutencoes = md.Abrir();
+	}
+}
